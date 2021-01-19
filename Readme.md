@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Tuiaara Linnala](https://up.htmlacademy.ru/htmlcss/30/user/1604607).
-* Наставник: `Неизвестно`.
+* Наставник: [Герман Аверин] (https://htmlacademy.ru/profile/id1151393)
 
 ---
 
