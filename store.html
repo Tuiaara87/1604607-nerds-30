@@ -10,9 +10,9 @@
     <a href="index.html">
         <img src="" alt="логотип Нердс"></a>
     <ul>
-      <li><a href="index.html">Студия</a></li>
+      <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li><a href="index.html">Магазин</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
@@ -21,35 +21,25 @@
 
 <main>
 <h1>Магазин готовых шаблонов</h1>
-<ul>
-    <li>
-        <a href="#">стоимость</a>
-        <a href="#">сортировать</a>
-        <a href="#">по цене </a>
-        <a href="#">по типу</a>
-        <a href="#">по названию</a>
-    </li>
-</ul>
-
 <section>
-<h2>фильтр проектов</h2>
+<h2>фильтр</h2>
 <form method="get" action="https://echo.htmlacademy.ru">
 <fieldset>
     <legend>сетка:</legend>
     <ul>
         <li>
             <input type="radio" name="grid"
-            value="format" id="formatfilter" checked>
+            value="Адаптивная" id="сеткаадаптивная" checked>
             <label for="formatfilter">Адаптивная</label>
         </li>
         <li>
             <input type="radio" name="grid"
-            value="format" id="formatfilter">
+            value="Фиксированная" id="сеткафиксированная">
             <label for="formatfilter">Фиксированная</label>
         </li>
         <li>
             <input type="radio" name="grid"
-            value="format" id="formatfilter">
+            value="Резиновая" id="сеткарезиновая">
             <label for="formatfilter">Резиновая</label>   
         </li>
     </ul>
@@ -58,23 +48,23 @@
     <legend>особенности:</legend>
     <ul>
         <li>
-            <input type="checkbox" name="Слайдер" id="Слайдер" checked>
+            <input type="checkbox" name="slider" id="slider" checked>
             <label for="Слайдер">Слайдер</label>
         </li>
         <li>
-            <input type="checkbox" name="Блокпреимуществ" id="Блокпреимуществ">
+            <input type="checkbox" name="blockofadvantages" id="blockofadvantages">
             <label for="Блокпреимуществ">Блокпреимуществ</label>
         </li>
         <li>
-            <input type="checkbox" name="Новости" id="Новости" checked>
+            <input type="checkbox" name="news" id="news" checked>
             <label for="Новости">Новости</label>       
         </li>
         <li>
-            <input type="checkbox" name="Галерея" id="Галерея">
+            <input type="checkbox" name="gallery" id="gallery">
             <label for="Галерея">Галерея</label> 
         </li>
         <li>
-            <input type="checkbox" name="Корзина" id="Корзина">
+            <input type="checkbox" name="basket" id="basket">
             <label for="Корзина">Корзина</label>     
         </li>
     </ul>
@@ -84,51 +74,67 @@
 </section>
 
 <section>
-<h2>список проектов</h2>
-<ul>
-    <li>
-    <a href="#">sedona</a>
-    <img src="" alt="отдых в седоне">
-     <p>sedona</p>
-     <p>Информационный сайт для туристов</p>
-     <button type="button">9900 р</button>
-    </li>
-    
-    <li>
-    <a href="#">pink</a>
-    <img src="" alt="pink">
-    </li>
-    
-    <li>
-    <a href="#">barbershop borodinski</a>
-    <img src="" alt="барбершоп">
-    </li>
-
-    <li>
-    <a href="#">mishka</a>
-    <img src="" alt="вязаные изделия">
-    </li>
-
-    <li>
-    <a href="#">A+</a>
-    <img src="" alt="обучающий центр">     
-    </li>
-
-    <li>
-    <a href="#">КВАСТ</a>
-    <img src="" alt="производитель кваса">        
-    </li>
-
-    </ul>
-</section>
-
+<h2>результат фильтрации</h2>
 <div>
     <ul>
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+        <li>
+            <a href="#">стоимость</a>
+            <a href="#">сортировать</a>
+            <a href="#">по цене </a>
+            <a href="#">по типу</a>
+            <a href="#">по названию</a>
+        </li>
     </ul>
 </div>
+<div>
+    <ul>
+        <li>
+        <a href="#">sedona</a>
+        <img src="" alt="отдых в седоне">
+         <p>sedona</p>
+         <p>Информационный сайт для туристов</p>
+         <button type="button">9900 р</button>
+        </li>
+        
+        <li>
+        <a href="#">pink</a>
+        <img src="" alt="pink">
+        </li>
+        
+        <li>
+        <a href="#">barbershop borodinski</a>
+        <img src="" alt="барбершоп">
+        </li>
+    
+        <li>
+        <a href="#">mishka</a>
+        <img src="" alt="вязаные изделия">
+        </li>
+    
+        <li>
+        <a href="#">A+</a>
+        <img src="" alt="обучающий центр">     
+        </li>
+    
+        <li>
+        <a href="#">КВАСТ</a>
+        <img src="" alt="производитель кваса">        
+        </li>
+    
+        </ul>
+</div>
+
+<div>
+        <ul>
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+</div>
+
+</section>
+
+
 </main>
 
 <footer>
@@ -136,7 +142,7 @@
     <p>Мы на карте</p>
     <p>NЁRDS DESIGN STUDIO<br>
     Адрес: ул.Б.Конюшенная, д.19\8<br>
-    <a href="blank.html">Напишите нам</a><br>
+    <a href="#">Напишите нам</a><br>
     телефон: +78122757575
     </p>
     <img src="">
