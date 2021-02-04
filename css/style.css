@@ -35,6 +35,8 @@
     background-color: #888888 ;
     font-size: 16px;
     line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 a {
@@ -44,39 +46,61 @@ a {
 /*Main navigation*/
 
 .main-navigation {
-    font-family: roboto;
-    font-size: 16px ;
-    line-height: 30px ;
-    background-color:  #eeeeee ;
-    style: normal;
+    font-family: inherit;
+    background-color:  #eeeeee;
+   }
+
+ .site-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
  }
 
- .main-header-logo {
+ .site-navigation {
+    list-style: none;
+  }
+
+  
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+  }
+  
+  .site-navigation a,
+  .user-navigation a {
+    color: black;
+  }
+  
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .user-navigation a:hover,
+  .user-navigation a:focus {
+    background-color: var(--basic-extra-dark);
+ 
+ 
+  .main-header-logo {
     width: 159.87px;
     height: 65.02px;
     color: black;
     position: absolute;
 }
 
-.site-navigation {
-    list-style: none;
-}
 
 /*Wrapper*/
 
 .slider {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
-    font-size: 49.4631px;
-    line-height: 49px;
-    
+    background-color:  #eeeeee;
 }
 
+.slider1 {
+    font-size: 49.4631px;
+    line-height: 49px;
+ }
+
 .services-list {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
+font-family: inherit;
+font-style: inherit;
+font-weight: inherit;
 font-size: 16px;
 line-height: 24px;
 }
@@ -88,10 +112,12 @@ line-height: 24px;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+    background: #FB565A;
 }
 
 .services-item {
 text-align: center;
+background: #888888;
 }
 
 .services-item h3 {
@@ -104,14 +130,14 @@ text-align: center;
 }
 
 .features-item {
-    font-style: normal;
-    font-weight: normal;
+    font-style: inherit;
+    font-weight: inherit;
     font-size: 16px;
     line-height: 24px;
 }
 
 .p {
-    font-family: Roboto;
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     line-height: 45px;
@@ -150,7 +176,7 @@ text-align: center;
 }
 
  .button {
-    font-family: Roboto;
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
