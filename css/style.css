@@ -1,0 +1,190 @@
+/*fonts*/
+
+@font-face {
+    font-family:"roboto";
+    src: url(../fonts/roboto.woff) format(woff2);
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*variables*/
+:root {
+    --basic-black: #000000;
+    --basic-dark: #eeeeee;
+    --basic-extra-dark: #283136;
+    --basic-neutral: #c1c1c1;
+    --basic-white: #FFFFFF;
+    --basic-grey: #A6A6A6;
+    --basic-light-grey: #e1e1e1;
+    --basic-red: #FB565A;
+    --basic-green: #00CA74;
+    --basic-yellow:#EFC849;
+    --basic-dark-grey: #444444;
+}
+
+/*Global*/
+
+.main-body {
+    min-width: 1440;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #888888 ;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Main navigation*/
+
+.main-navigation {
+    font-family: roboto;
+    font-size: 16px ;
+    line-height: 30px ;
+    background-color:  #eeeeee ;
+    style: normal;
+ }
+
+ .main-header-logo {
+    width: 159.87px;
+    height: 65.02px;
+    color: black;
+    position: absolute;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+/*Wrapper*/
+
+.slider {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 49.4631px;
+    line-height: 49px;
+    
+}
+
+.services-list {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
+
+.button {
+    font: inherit;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.services-item {
+text-align: center;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.features {
+    background-color: #888888;
+}
+
+.features-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.feature2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+ /*Footer*/
+
+ .footer {
+     color: var(--basic-black);
+     background-color:  #888888;
+     background-repeat: repeat;
+ }
+
+ .address{
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;   
+ }
+
+ .contacts-phone {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+ }
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+ .button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #FB565A;
+ }
+
+ .footer-social {
+     text-align: left
+ }
+
+ .footer-social ul {
+    list-style: none;
+    background-color: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;;
+  }
+
+  /*Slogan*/
+  
+  .p{
+    font-size: 36px;
+    line-height: 36px;
+    color:  #000000;
+  }
+
+  .p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+  }
+
+
+
+
+
+
+
+ 
