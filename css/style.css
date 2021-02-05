@@ -2,26 +2,31 @@
 
 @font-face {
     font-family:"roboto";
-    src: url(../fonts/roboto.woff) format(woff2);
+    src: url(fonts/roboto) format(woff2);
     font-weight: 500;
     font-style: normal;
 }
 
-
 /*variables*/
 :root {
-    --basic-black: #000000;
-    --basic-dark: #eeeeee;
-    --basic-extra-dark: #283136;
-    --basic-neutral: #c1c1c1;
-    --basic-white: #FFFFFF;
-    --basic-grey: #A6A6A6;
-    --basic-light-grey: #e1e1e1;
-    --basic-red: #FB565A;
-    --basic-green: #00CA74;
-    --basic-yellow:#EFC849;
-    --basic-dark-grey: #444444;
+  --basic-black: #000000;
+  --basic-dark: #eeeeee;
+  --basic-extra-dark: #283136;
+  --basic-neutral: #c1c1c1;
+  --basic-white: #FFFFFF;
+  --basic-grey: #A6A6A6;
+  --basic-multi-light-grey: #e1e1e1;
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-yellow:#EFC849;
+  --basic-dark-grey: #444444;
+  --basic-light-grey: #888888; 
+  --basic-bright-black:  #666666;
+  --basic-graphite-grey: D5D5D5; 
 }
+
+
+
 
 /*Global*/
 
@@ -32,29 +37,46 @@
     font-family: roboto;
     font-weight: 400;
     text-transform: uppercase;
-    background-color: #888888 ;
+    background-color: var(--basic-light-grey);
     font-size: 16px;
     line-height: 24px;
     font-style: normal;
     font-weight: normal;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows:
+    min-content 
+    1fr
+    min-content;
+    align-content: start;
+   
 }
 
-a {
+ a {
     text-decoration: none;
+}
+
+.page {
+  height: 100%;
 }
 
 /*Main navigation*/
 
 .main-navigation {
     font-family: inherit;
-    background-color:  #eeeeee;
+    background-color: var(--basic-dark);
+    font-weight: 500;
    }
+
+   
 
  .site-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: #000000;
- }
+    color: var(--basic-black);
+    font-weight: 500;
+   }
 
  .site-navigation {
     list-style: none;
@@ -67,7 +89,7 @@ a {
   
   .site-navigation a,
   .user-navigation a {
-    color: black;
+    color: var(--basic-black);
   }
   
   .site-navigation a:hover,
@@ -80,21 +102,37 @@ a {
   .main-header-logo {
     width: 159.87px;
     height: 65.02px;
-    color: black;
+    color: var(--basic-black);
     position: absolute;
 }
 
 
 /*Wrapper*/
 
-.slider {
-    font-weight: 500;
-    background-color:  #eeeeee;
-}
 
 .slider1 {
-    font-size: 49.4631px;
-    line-height: 49px;
+  font-weight: 500;
+  position: absolute;
+  width: 1440px;
+  height: 545px;
+  left: 0px;
+  top: 0px;
+   background: var(--basic-dark);
+}
+
+.title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+   }
+ 
+ .subtitle {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
  }
 
 .services-list {
@@ -112,12 +150,12 @@ line-height: 24px;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    background: #FB565A;
+    background: var(--basic-red);
 }
 
 .services-item {
 text-align: center;
-background: #888888;
+background: var(--basic-light-grey);
 }
 
 .services-item h3 {
@@ -126,7 +164,7 @@ background: #888888;
 }
 
 .features {
-    background-color: #888888;
+    background-color: var(--basic-light-grey);
 }
 
 .features-item {
@@ -154,20 +192,22 @@ background: #888888;
 
  .footer {
      color: var(--basic-black);
-     background-color:  #888888;
+     background-color: var(--basic-light-grey);
      background-repeat: repeat;
  }
 
  .address{
+    font-family: inherit;
     font-size: 16px;
     line-height: 18px;
-    color: #666666;   
+    color: var(--basic-bright-black);   
  }
 
  .contacts-phone {
+    font-family: inherit;
     font-size: 16px;
     line-height: 18px;
-    color: #666666;
+    color: var(--basic-bright-black);
  }
 
 .footer-contacts a:hover,
@@ -181,7 +221,7 @@ background: #888888;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    background-color: #FB565A;
+    background-color: var(--basic-red);
  }
 
  .footer-social {
@@ -195,16 +235,18 @@ background: #888888;
 
   /*Slogan*/
   
-  .p{
+  .slogan1 {
+    font-family: inherit;
     font-size: 36px;
     line-height: 36px;
-    color:  #000000;
+    color: var(--basic-black);
   }
 
-  .p {
+  .slogan2 {
+    font-family: inherit;
     font-size: 16px;
     line-height: 22px;
-    color: #444444;
+    color: var(--basic-dark-grey);
   }
 
 
@@ -222,7 +264,7 @@ background: #888888;
 
 @font-face {
   font-family:"roboto";
-  src: url(../fonts/roboto.woff) format(woff2);
+  src: url(fonts/roboto) format(woff2);
   font-weight: 500;
   font-style: normal;
 }
@@ -236,12 +278,14 @@ background: #888888;
   --basic-neutral: #c1c1c1;
   --basic-white: #FFFFFF;
   --basic-grey: #A6A6A6;
-  --basic-light-grey: #e1e1e1;
+  --basic-multi-light-grey: #e1e1e1;
   --basic-red: #FB565A;
   --basic-green: #00CA74;
   --basic-yellow:#EFC849;
   --basic-dark-grey: #444444;
   --basic-light-grey: #888888; 
+  --basic-bright-black:  #666666;
+  --basic-graphite-grey: D5D5D5; 
 }
 
 /*Global*/
@@ -250,10 +294,10 @@ background: #888888;
   min-width: 1440;
   margin: 0;
   padding: 0;
-  font-family: roboto;
+  font-family: "roboto";
   font-weight: 400;
   text-transform: uppercase;
-  background-color: #888888 ;
+  background-color: (var(--basic-light-grey)) ;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
@@ -265,7 +309,7 @@ a {
 }
 
 .inner-catalog-page .main-header {
- background-color: #888888;
+ background-color: var(--basic-light-grey);
 }
 
 
@@ -273,13 +317,14 @@ a {
 
 .main-navigation {
   font-family: inherit;
-  background-color:  #eeeeee;
+  background-color: var(--basic-dark);
  }
 
 .site-navigation {
   font-size: 16px;
   line-height: 30px;
-  color: #000000;
+  color: var(--basic-black);
+  font-weight: 500;
 }
 
 .site-navigation {
@@ -293,7 +338,7 @@ a {
 
 .site-navigation a,
 .user-navigation a {
-  color: black;
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover,
@@ -306,48 +351,53 @@ a {
 .main-header-logo {
   width: 159.87px;
   height: 65.02px;
-  color: black;
+  color: var(--basic-black);
   position: absolute;
 }
 
  /*Wrapper*/
 
- .page-title {
+ .page-title { //создаем жирный заголовок
+  font-family: inherit;
+  font-weight: 500;
   font-size: 55px;
   font-height: 55px; 
+  color: var(--basic-black);
  }
 
  .filter {
 font-family: inherit;
+font-weight: 400;
 font-size: 16px;
 line-height: 22px;
-color: #283136;
+color: var(--basic-extra-dark);
  }
 
   .grid-list {
 font-family: inherit;
+font-weight: 400;
 font-size: 16px;
 line-height: 19px;
-color: #283136;
+color: var(--basic-extra-dark);
   }
 
   .features {
     font-family: inherit;
     font-size: 16px;
     line-height: 19px;
-    color: #283136;
+    color: var(--basic-extra-dark);
   }
 
   .button {
     font-family: inherit;
     text-align: center;
-    color: #eeeeee;
+    color: var(--basic-dark);
   }
 
   .button:hoover,
   .button:focus,
   .button:active {
-    background-color: #d5d5d5;
+    background-color: var(--basic-graphite-grey);
   }
 
   .filtration-result {
@@ -358,22 +408,25 @@ color: #283136;
   
  /*Footer*/
 
+ 
  .footer {
   color: var(--basic-black);
-  background-color:  #888888;
+  background-color: var(--basic-light-grey);
   background-repeat: repeat;
 }
 
 .address{
+ font-family: inherit;
  font-size: 16px;
  line-height: 18px;
- color: #666666;   
+ color: var(--basic-bright-black);   
 }
 
 .contacts-phone {
+ font-family: inherit;
  font-size: 16px;
  line-height: 18px;
- color: #666666;
+ color: var(--basic-bright-black);
 }
 
 .footer-contacts a:hover,
@@ -387,7 +440,7 @@ text-decoration: none;
  font-weight: 500;
  font-size: 16px;
  line-height: 18px;
- background-color: #FB565A;
+ background-color: var(--basic-red);
 }
 
 .footer-social {
@@ -399,17 +452,19 @@ text-decoration: none;
  background-color: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;;
 }
 
+
 /*Slogan*/
 
-.p{
- font-size: 36px;
- line-height: 36px;
- color:  #000000;
+.slogan1 {
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
 }
 
-.p {
- font-size: 16px;
- line-height: 22px;
- color: #444444;
+.slogan2 {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-dark-grey);
 }
-
