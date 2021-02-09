@@ -16,44 +16,39 @@
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="66"
           alt="Логотип Нердс"></a>
-      <div class="main-header-bar"></div>
-      <div class="main-header-wrapper">
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="site-navigation">
+        <li class="site-item"><a href="#">Студия</a></li>
+        <li class="site-item"><a href="#">Клиенты</a></li>
+        <li class="site-item"><a href="catalog.html">Магазин</a></li>
+        <li class="site-item"><a href="#">Контакты</a></li>
+        <li class="site-item"><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15"
+              alt="">Корзина</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="container">
 
-    <section class="banner">
-      <div class="wrapper">
-        <h2 class="title">Долго, дорого скрупулезно</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <img src="img/slides/flying_phones.svg" width="760" height="431" alt="Летающие смартфоны">
-      </div>
+    <section class="slider">
+      <h2 class="title">Долго, дорого скрупулезно</h2>
+      <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      <a class="btn" href="blank.html">Узнать больше</a>
+      <img class="flying-phones" src="img/slides/flying_phones.svg" width="760" height="431" alt="летающие телефоны">
+    </section>
 
-      <div class="slider2">
-        <div>
-          <p class="title">Долго, дорого скрупулезно</p>
-          <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="meta" href="blank.html">Узнать больше</a>
-        </div>
-        <img src="img/flyingphones.svg" width="760" height="431" alt="Летающие смартфоны">
-      </div>
+    <section class="slider">
+      <h2 class="title">Долго, дорого скрупулезно</h2>
+      <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      <a class="link-slider" href="blank.html">Узнать больше</a>
+      <img class="flying-phones" src="img/slides/flying_phones.svg" width="760" height="431" alt="летающие телефоны">
+    </section>
 
+    <section>
       <ul class="button-list">
-        <li class="button item1"><button>1</button></li>
-        <li class="button item2"><button>2</button></li>
-        <li class="button item3"><button>3</button></li>
+        <li class="button-item"><button>1</button></li>
+        <li class="button-item"><button>2</button></li>
+        <li class="button-item"><button>3</button></li>
       </ul>
     </section>
 
@@ -61,49 +56,50 @@
       <h2>Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
-          <img src="img/services/websites.png" width="300" height="146" alt="Ноутбук">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит наш сайт!</p>
-          <button>Заказать</button>
+          <img class="website" src="img/services/websites.png" width="300" height="146" alt="Ноутбук">
+          <h3 class="site">Веб-сайты</h3>
+          <p class="site-title">Мир никогда не будет прежним после того как увидит наш сайт!</p>
+          <button class="button">Заказать</button>
         </li>
 
         <li class="services-item">
-          <img src="img/services/applications.png" width="300" height="146" alt="Смартфоны">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button>Заказать</button>
+          <img class="smartphones" src="img/services/applications.png" width="300" height="146" alt="Смартфоны">
+          <h3 class="applications">Приложения</h3>
+          <p class="applications-title">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button class="button">Заказать</button>
         </li>
 
         <li class="services-item">
-          <img src="img/services/presentation.png" width="300" height="146" alt="Экран с презентациями">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете насколько вы изумительны</p>
-          <button>Заказать</button>
+          <img class="presentation-screen" src="img/services/presentation.png" width="300" height="146"
+            alt="Экран с презентациями">
+          <h3 class="presentations">Презентации</h3>
+          <p class="presentations-title">Вы даже не подозреваете насколько вы изумительны</p>
+          <button class="button">Заказать</button>
         </li>
       </ul>
     </section>
 
     <section class="features">
-      <h2>Преимущества</h2>
+
       <div class="feature1">
-        <p>Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+        <p class="feature-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="feature-skill">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p> Выполняем заказы на разработку:</p>
+        <p class="feature-list"> Выполняем заказы на разработку:</p>
         <ul class="features-list1">
-          <li class="feaures-item">Веб-сайтов любой сложности</li>
-          <li class="features-item">Мобильных приложений для iOS и Android</li>
-          <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
+          <li class="feaure-item">Веб-сайтов любой сложности</li>
+          <li class="feature-item">Мобильных приложений для iOS и Android</li>
+          <li class="feature-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
 
       <div class="feature2">
-        <img src="img/logos/nerds-logo-main.svg" width="360" height="280" alt="Логотип компании">
-        <p>С 2004 года любим точность во всем</p>
-        <ul class="features-list2">
-          <li class="feaures-item"><span>146%</span>Уровень самоотдачи</li>
-          <li class="feaures-item"><span>100%</span>Соблюдение сроков</li>
-          <li class="feaures-item"><span>50%</span>Минимальная предоплата</li>
+        <img class="logo-main" src="img/logos/nerds-logo-main.svg" width="360" height="280" alt="Логотип компании">
+        <p class="feature-title2">С 2004 года любим точность во всем</p>
+        <ul class="feature-list2">
+          <li class="feaure-item"><span class="percentage">146%</span>Уровень самоотдачи</li>
+          <li class="feaure-item"><span class="percentage">100%</span>Соблюдение сроков</li>
+          <li class="feaure-item"><span class="percentage">50%</span>Минимальная предоплата</li>
         </ul>
       </div>
     </section>
@@ -113,22 +109,22 @@
       <ul class="customers-list">
         <li class="customers-item">
           <a href="https://htmlacademy.ru" target="_blank">
-            <img src="img/customers/htmlacademy.svg" width="199" height="68" alt="Клиент htmlacademy">
+            <img class="customer1" src="img/customers/htmlacademy.svg" width="199" height="68" alt="Клиент htmlacademy">
           </a>
         </li>
         <li class="customers-item">
           <a href="#">
-            <img src="img/customers/borodinski.svg" width="209" height="90" alt="Клиент бородинский">
+            <img class="customer2" src="img/customers/borodinski.svg" width="209" height="90" alt="Клиент бородинский">
           </a>
         </li>
         <li class="customers-item">
           <a href="#">
-            <img src="img/customers/pink.svg" width="185" height="52" alt="Клиент пинк">
+            <img class="customer3" src="img/customers/pink.svg" width="185" height="52" alt="Клиент пинк">
           </a>
         </li>
         <li class="customers-item">
           <a href="#">
-            <img src="img/customers/mishka.svg" width="185" height="52" alt="Клиент мишка">
+            <img class="customer4" src="img/customers/mishka.svg" width="185" height="52" alt="Клиент мишка">
           </a>
         </li>
       </ul>
@@ -138,15 +134,13 @@
 
   <footer class="footer">
     <section class="footer-contacts">
-      <h2>мы на карте</h2>
       <div class="address">
-        <p>Мы на карте</p>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+        <p class="studio-address">NЁRDS DESIGN STUDIO</p>
+        <p class="nerds-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         <a class="contacts-phone" href="tel:+7122757575">
           (812)275-75-75
         </a>
-        <button class="button">Напишите нам</button>
+        <button class="button-address">Напишите нам</button>
       </div>
 
       <div class="location">
@@ -156,7 +150,7 @@
     </section>
 
     <section class="footer-social">
-      <h2>Мы в соцсетях</h2>
+
       <ul class="social-list">
         <li class="social-item">
           <a class="link-vk" href="#">

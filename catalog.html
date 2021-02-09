@@ -13,24 +13,27 @@
 <body class="inner-catalog-page">
   <header class="main-header">
     <nav class="main-navigation">
+
       <a class="main-header-logo" href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="66"
           alt="Логотип Нердс"></a>
+
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
+        <li class="site-item"><a href="#">Студия</a></li>
+        <li class="site-item"><a href="#">Клиенты</a></li>
+        <li class="site-item"><a href="catalog.html">Магазин</a></li>
+        <li class="site-item"><a href="#">Контакты</a></li>
+        <li class="site-item"><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15"
+              alt="">Корзина</a>
         </li>
       </ul>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
     </nav>
   </header>
 
   <main class="wrapper">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
     <section class="filter">
-      <h2>фильтр</h2>
+      <h2 class="filter-title">стоимость</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="1">
           <label for="price1">от</label>
@@ -66,7 +69,7 @@
             </li>
             <li class="features-item2">
               <input type="checkbox" name="blockofadvantages" id="feature2">
-              <label for="feature2">Блокпреимуществ</label>
+              <label for="feature2">Блок преимуществ</label>
             </li>
             <li class="features-item3">
               <input type="checkbox" name="news" id="feature3" checked>
@@ -88,9 +91,8 @@
     </section>
 
     <section class="filtration-result">
-      <h2>результат фильтрации</h2>
       <div class="sort">
-        <p>Сортировать:</p>
+        <p class="filtration-title">сортировать:</p>
         <ul class="sort-list">
           <li class="sort-list1">
             <a href="#">по цене </a>
@@ -106,10 +108,10 @@
         <ul class="projects">
           <li class="projects-item1">
             <img src="img/projects/sedona.png" width="358" height="578" alt="отдых в седоне">
-            <div>
-              <p>sedona</p>
-              <p>Информационный сайт для туристов</p>
-              <button type="button">9900 р</button>
+            <div class="sedona-project">
+              <p class="sedona">sedona</p>
+              <p class="sedona-info">Информационный сайт для туристов</p>
+              <button class="button-sedona">9900 р</button>
             </div>
           </li>
 
@@ -148,18 +150,15 @@
     </section>
   </main>
 
-
   <footer class="footer">
     <section class="footer-contacts">
-      <h2>мы на карте</h2>
       <div class="address">
-        <p>Мы на карте</p>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+        <p class="studio-address">NЁRDS DESIGN STUDIO</p>
+        <p class="nerds-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         <a class="contacts-phone" href="tel:+7122757575">
           (812)275-75-75
         </a>
-        <button class="button">Напишите нам</button>
+        <button class="button-address">Напишите нам</button>
       </div>
 
       <div class="location">
@@ -169,26 +168,34 @@
     </section>
 
     <section class="footer-social">
-      <h2>Мы в соцсетях</h2>
+
       <ul class="social-list">
         <li class="social-item">
-          <img src="img/icons/vk.svg" width="81" height="81" alt="Вконтакте">
-          <a class="link vk" href="#">Вконтакте</a>
-          <img src="img/icons/fb.svg" width="81" height="81" alt="Фейсбук">
-          <a class="link fb" href="#">Фейсбук</a>
+          <a class="link-vk" href="#">
+            <img src="img/icons/vk.svg" width="81" height="81" alt="Вконтакте">
+          </a>
         </li>
+
         <li class="social-item">
-          <img src="img/icons/ig.svg" width="81" height="81" alt="Инстаграм">
-          <a class="link ig" href="#">Инстаграм</a>
+          <a class="link-fb" href="#">
+            <img src="img/icons/fb.svg" width="81" height="81" alt="Фейсбук">
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a class="link-ig" href="#">
+            <img src="img/icons/ig.svg" width="81" height="81" alt="Инстаграм">
+          </a>
         </li>
       </ul>
 
       <div class="slogan">
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <p class="slogan1">Давайте дружить, это выгодно!</p>
+        <p class="slogan2">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </section>
   </footer>
+
 </body>
 
 </html>
