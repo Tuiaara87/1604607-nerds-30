@@ -14,30 +14,36 @@
 <body class="main-page">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="66"
-          alt="Логотип Нердс"></a>
-      <ul class="site-navigation">
-        <li class="site-item"><a href="#">Студия</a></li>
-        <li class="site-item"><a href="#">Клиенты</a></li>
-        <li class="site-item"><a href="catalog.html">Магазин</a></li>
-        <li class="site-item"><a href="#">Контакты</a></li>
-        <li class="site-item"><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15"
-              alt="">Корзина</a>
-        </li>
-      </ul>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logos/nerds-logo.svg" width="160" height="66" alt="Логотип Нердс"></a>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li class="site-item"><a href="#">Студия</a></li>
+            <li class="site-item"><a href="#">Клиенты</a></li>
+            <li class="site-item"><a href="catalog.html">Магазин</a></li>
+            <li class="site-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <h2 class="title">Долго, дорого скрупулезно</h2>
+        <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="btn" href="blank.html">Узнать больше</a>
+        <img class="flying-phones" src="img/slides/flying_phones.svg" width="760" height="431" alt="летающие телефоны">
+      </div>
+
     </nav>
   </header>
 
   <main class="container">
 
-    <section class="slider">
-      <h2 class="title">Долго, дорого скрупулезно</h2>
-      <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a class="btn" href="blank.html">Узнать больше</a>
-      <img class="flying-phones" src="img/slides/flying_phones.svg" width="760" height="431" alt="летающие телефоны">
-    </section>
 
-    <section class="slider">
+
+    <section class="slider2">
       <h2 class="title">Долго, дорого скрупулезно</h2>
       <p class="subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <a class="link-slider" href="blank.html">Узнать больше</a>
@@ -97,15 +103,21 @@
         <img class="logo-main" src="img/logos/nerds-logo-main.svg" width="360" height="280" alt="Логотип компании">
         <p class="feature-title2">С 2004 года любим точность во всем</p>
         <ul class="feature-list2">
-          <li class="feaure-item"><span class="percentage">146%</span>Уровень самоотдачи</li>
-          <li class="feaure-item"><span class="percentage">100%</span>Соблюдение сроков</li>
-          <li class="feaure-item"><span class="percentage">50%</span>Минимальная предоплата</li>
+          <li class="feaure-item">
+            <div class="percentage">146%</div>Уровень самоотдачи
+          </li>
+          <li class="feaure-item">
+            <div class="percentage">100%</div>Соблюдение сроков
+          </li>
+          <li class="feaure-item">
+            <div class="percentage">50%</div>Минимальная предоплата
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="customers">
-      <h2>Наши клиенты</h2>
+      <h2></h2>
       <ul class="customers-list">
         <li class="customers-item">
           <a href="https://htmlacademy.ru" target="_blank">
@@ -132,7 +144,7 @@
   </main>
 
 
-  <footer class="footer">
+  <footer class="container">
     <section class="footer-contacts">
       <div class="address">
         <p class="studio-address">NЁRDS DESIGN STUDIO</p>
@@ -142,6 +154,7 @@
         </a>
         <button class="button-address">Напишите нам</button>
       </div>
+
 
       <div class="location">
         <img src="img/map/address.svg" width="231" height="190" alt="Метка на карте">

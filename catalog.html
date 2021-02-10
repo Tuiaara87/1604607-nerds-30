@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -16,16 +16,19 @@
 
       <a class="main-header-logo" href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="66"
           alt="Логотип Нердс"></a>
-
-      <ul class="site-navigation">
-        <li class="site-item"><a href="#">Студия</a></li>
-        <li class="site-item"><a href="#">Клиенты</a></li>
-        <li class="site-item"><a href="catalog.html">Магазин</a></li>
-        <li class="site-item"><a href="#">Контакты</a></li>
-        <li class="site-item"><a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15"
-              alt="">Корзина</a>
-        </li>
-      </ul>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li class="site-item"><a href="#">Студия</a></li>
+            <li class="site-item"><a href="#">Клиенты</a></li>
+            <li class="site-item"><a href="catalog.html">Магазин</a></li>
+            <li class="site-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
+          </div>
+        </div>
+      </div>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </nav>
   </header>
@@ -35,7 +38,7 @@
     <section class="filter">
       <h2 class="filter-title">стоимость</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="1">
+        <fieldset class="filter-item">
           <label for="price1">от</label>
           <input type="text" name="price1" value="0" id="price1">
           <label for="price2">до</label>
