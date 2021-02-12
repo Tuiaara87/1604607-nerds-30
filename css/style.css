@@ -41,7 +41,7 @@
     font-style: normal;
     font-weight: normal;
 
-    min-height: 100%;
+   min-height: 100%;
     display: grid;
     grid-template-rows: min-content
      1fr
@@ -74,8 +74,8 @@ height: 416px;
  display: grid;
   grid-template-columns: 1fr min-content;
  background-color: #eeeeee;
-   width: 1440;
-   height: 545;
+   width: 1440px;
+   height: 545px;
   }
 
 .main-header-logo {
@@ -121,6 +121,7 @@ text-decoration: none;
  .slider2 {
    display: none;
  }
+
 .title {
   padding-left: 140px;
   padding-right: 762px;
@@ -157,11 +158,12 @@ color: #FFFFFF;
 
 
 .container {
-  width: 140px;
+  width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
 }
 .services {
+  width: 1440px;
   margin-bottom: 100px;
  }
 
@@ -238,6 +240,7 @@ color: #283136;;
    display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 300px;
+  width: 1440px;
 }
 
 .feature1 {
@@ -294,7 +297,7 @@ color: black;
 /*customers*/
 
 .customers {
-  width: 140px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -303,6 +306,8 @@ color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   column-gap: 95px 104px 120px;
+  padding-right: 183px;
+  padding-left: 172px;
 }
 
 .customers-item {
@@ -334,6 +339,10 @@ height: 84px;
 }
 
 /*footer*/
+
+.container {
+  width: 1440px;
+}
 
 .address {
   width: 319px;
@@ -385,13 +394,17 @@ line-height: 22px;
 color: #444444;
 }
 
-
+.address {
+  position: absolute;
+}
 
 
 
 
 /*Catalog*/
-
+.inner-catalog-page{
+  width: 1440px;
+}
 .page {
   height: 100%;
 }
@@ -403,6 +416,7 @@ color: #444444;
 .main-header-bar{
    background-color: #EEEEEE;
 }
+
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -444,16 +458,14 @@ padding-bottom: 135px;
 
 .wrapper {
   width: 1440px;
- 
-display: grid;
+ display: grid;
 grid-template-columns: 260px 1fr;
 align-content: start;
 }
 
 
 .filter-title {
-
-  font-size: 18px;
+font-size: 18px;
 line-height: 30px;
 color: #000000;
 }
@@ -528,8 +540,15 @@ padding-right: 80px;
 .button-list {
   list-style: none;
 }
+ 
+
+/* footer*/
 
 .footer {
-  width: 1440px;
-  
+  width: 1440px; 
+}
+
+
+.address {
+  position: absolute;
 }
