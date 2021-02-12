@@ -42,6 +42,10 @@
 }
 
 
+.page {
+    margin: 0 auto;
+    height: 100%;
+    }
 
 
 .main-header {
@@ -49,7 +53,9 @@
 }
 
 .main-header-logo {
-  justify-content: stretch;
+    display: flex;
+  justify-content: flex-start;
+  position: absolute;
     width: 159.87px;
 height: 65.02px;
    }
@@ -60,10 +66,6 @@ height: 65.02px;
     margin: 0;
     padding: 0;
    }
-
-.user-navigation {
-    max-width: 140px;
-}
 
 
 .user-navigation .bucket-link {
@@ -86,6 +88,19 @@ height: 65.02px;
     width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.flying-phones {
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    position: absolute;
+width: 240px;
+height: 50px;
+background: #FB565A;
+border-radius: 3px;
 }
 
 .slider2 {
@@ -116,35 +131,117 @@ height: 65.02px;
     padding: 0;
 }
 
+.button1 {
+    position: absolute;
+width: 160px;
+height: 50px;
+background: #FB565A;
+border-radius: 3px;
+}
+
+.button2 {
+    position: absolute;
+width: 160px;
+height: 50px;
+background: #00CA74;
+border-radius: 3px;
+}
+
+.button3 {
+    position: absolute;
+width: 160px;
+height: 50px;
+background: #EFC849;
+border-radius: 3px;
+}
+
+/*feature*/
+
 .features {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     margin-bottom: 35px;
 }
 
-.feaure-item {
+.feature-item {
     margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    }
 }
 
-.customers-list {
+.feature-skill {
+    font-size: 16px;
+line-height: 24px;
+color: #283136;
+}
+
+.feature-title {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 45px;
+color: #000000;
+}
+
+.feature-list {
+    font-size: 16px;
+line-height: 24px;
+color: #283136;
+}
+
+.feature-title2 {
+    font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+
+.feature-list2 {
     list-style: none;
 }
 
-.customers {
-    
-}
-    outline: 5px solid red;
+.feaure-item {
+    display: flex;
+    justify-content: space-between;
 }
 
-.customers-item {
-    outline: 5px solid blue;  
+.percentage {
+    font-weight: bold;
+font-size: 45px;
+line-height: 64px;
+color: #000000;
 }
+
 
 .social-list {
-    
-   display: flex;
+     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+/*footer*/
+
+.slogan1 {
+    position: absolute;
+width: 660px;
+height: 36px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.slogan2 {
+    position: absolute;
+width: 373px;
+height: 22px;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #444444;
 }
