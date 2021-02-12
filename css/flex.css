@@ -95,6 +95,10 @@ height: 65.02px;
     justify-content: end;
 }
 
+.slider2 {
+    display: none;
+}
+
 .btn {
     position: absolute;
 width: 240px;
@@ -245,3 +249,101 @@ display: flex;
 align-items: center;
 color: #444444;
 }
+
+
+/* catalog*/
+
+
+
+.main-header {
+    background: #EEEEEE;
+}
+
+.main-header-logo {
+    display: flex;
+  justify-content: flex-start;
+  position: absolute;
+    width: 159.87px;
+height: 65.02px;
+   }
+
+   
+.site-navigation {
+    list-style: none;
+    width: 374px;
+    margin: 0;
+    padding: 0;
+   }
+
+   
+.user-navigation .bucket-link {
+    padding-left: 50px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*wrapper*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    outline: 2px solid red;
+}
+
+.filtration-title {
+    font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+color: black;
+}
+
+.filtration-result {
+   
+   outline: 2px solid blue;
+}
+
+.projects {
+    list-style: none;
+}
+
+.container {
+    display: flex; 
+}
+
+.sort-list {
+    list-style: none;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 42px;
+}
+
+.sedona-project {
+position: absolute;
+width: 360px;
+height: 231px;
+background: #EEEEEE;
+}
+
+.button-sedona {
+    width: 200px;
+    height: 50px;
+    background: #FB565A;
+border-radius: 3px;
+}
+
+.sedona {
+    font-size: 18px;
+line-height: 30px;
+color: black;
+}
+
