@@ -58,12 +58,6 @@ margin: 0 auto;
 height: 100%;
 }
 
-.main-page {
-  background: #fffefe;
-  width: 1440px;
-height: 416px;
-}
-
 /*navigation*/
 
 .main-navigation {
@@ -78,13 +72,6 @@ height: 416px;
    height: 545px;
   }
 
-.main-header-logo {
-width: 159px;
-  height: 65px;
- padding-top: 50px;
-padding-left: 140px;
-}
- 
 .main-header-bar {
 background-color: #EEEEEE;
 }
@@ -441,9 +428,6 @@ color: #000000;
  list-style: none;
 }
 
-.main-navigation {
-  display: grid;
-}
 
 .page-title {
   font-weight: 500;
