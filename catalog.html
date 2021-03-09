@@ -19,38 +19,32 @@
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a class="navigation-item-active" href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="user-navigation">
         <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
       </div>
     </nav>
-    <div class="container">
-      <p class="page-title">Магазин готовых шаблонов</p>
-    </div>
   </header>
 
   <main class="main-page">
+    <div class="page-title-wrapper">
+      <div class="container">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+      </div>
+    </div>
     <section class="filter container">
-      <!--h2Фильтр-->
+      <h2 class="visually-hidden">Фильтр</h2>
 
       <div class="filter-box">
-        <!-- <h2 class="filter-title">стоимость:</h2>-->
-        <!-- <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-item">
-            <label for="price1">от</label>
-            <input type="text" name="price1" value="0" id="price1">
-            <label for="price2">до</label>
-            <input type="text" name="price2" value="15000" id="price2">
-          </fieldset>-->
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="width: 30% margin-left: 20%">
+                  <div class="bar" style="width: 30%; margin-left: 20%">
                   </div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
@@ -90,182 +84,131 @@
           <legend class="features-title">особенности:</legend>
           <ul class="features-list">
             <li class="features-item">
-              <input name="checkbox1" type="slider" id="feature1" checked>
-              <label class="features-label" for="feature1">Слайдер</label>
+              <input name="features-one" type="checkbox" id="slider-checkbox" checked>
+              <label class="feature-label" for="slider-checkbox">Слайдер</label>
             </li>
             <li class="features-item">
-              <input name="checkbox2" type="blockofadvantages" id="feature2">
-              <label class="features-label" for="feature2">Блок преимуществ</label>
+              <input name="features-one" type="checkbox" id="block-checkbox">
+              <label class="feature-label" for="block-checkbox">Блок преимуществ</label>
             </li>
             <li class="features-item">
-              <input name="checkbox3" type="news" id="feature3" checked>
-              <label class="features-label" for="feature3">Новости</label>
+              <input name="features-one" type="checkbox" id="news-checkbox" checked>
+              <label class="feature-label" for="news-checkbox">Новости</label>
             </li>
             <li class="features-item">
-              <input name="checkbox4" type="gallery" id="feature4">
-              <label class="features-label" for="feature4">Галерея</label>
+              <input name="features-one" type="checkbox" id="gallery-checkbox">
+              <label class="feature-label" for="gallery-checkbox">Галерея</label>
             </li>
             <li class="features-item">
-              <input name="checkbox5" type="basket" id="feature5">
-              <label class="features-label" for="feature5">Корзина</label>
+              <input name="features-one" type="checkbox" id="bucket-checkbox">
+              <label class="feature-label" for="bucket-checkbox">Корзина</label>
             </li>
           </ul>
-
-          <!-- <ul class="features-list">
-            <li class="features-item">
-              <label class="features-label">
-                <input class="features-check" type="checkbox" name="slider" id="feature-slider" checked>Слайдер
-              </label>
-            </li>
-
-            <li class="features-item">
-              <label class="features-label">
-                <input class="features-check" type="checkbox" name="blockofadvantages" id="feature-block">Блок
-                преимуществ
-              </label>
-            </li>
-
-            <li class="features-item">
-              <label class="features-label">
-                <input class="features-check" type="checkbox" name="news" id="feature-news" checked>Новости
-              </label>
-            </li>
-
-            <li class="features-item">
-              <label class="features-label">
-                <input class="features-check" type="checkbox" name="gallery" id="feature-gallery">Галерея
-              </label>
-            </li>
-
-            <li class="features-item">
-              <label class="features-label">
-                <input class="features-check" type="checkbox" name="basket" id="feature-bucket">Корзина
-              </label>
-            </li> -->
-
-
         </fieldset>
         <button class="submit">показать</button>
-        </form>
       </div>
 
-      <div class="filtration-result">
-
-        <div class="filtration-box">
-          <div class="sort-wrapper">
-            <div class="title">
-              сортировать:
+      <div class="filtration-box">
+        <div class="sort-wrapper">
+          <div class="title">
+            сортировать:
+          </div>
+          <ul class="sort-list category">
+            <li>
+              <button class="active">по цене</button>
+            </li>
+            <li>
+              <button>по типу</button>
+            </li>
+            <li>
+              <button>по названию</button>
+            </li>
+          </ul>
+          <ul class="sort-list direction">
+            <li>
+              <button class="active">
+                <img src="img/icons/down-arrow.svg" alt="по убыванию">
+              </button>
+            </li>
+            <li>
+              <button>
+                <img class="arrow-up" src="img/icons/down-arrow.svg" alt="по возрастанию">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ul class="projects">
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/sedona.png" width="358" height="578" alt="проект Sedona">
+            <div class="project-info">
+              <a href="#" class="project-title">sedona</a>
+              <p class="project-description">Информационный сайт для туристов</p>
+              <button class="project-button">9900р</button>
             </div>
-            <ul class="sort-list category">
-              <li>
-                <button class="active">по цене</button>
-              </li>
-              <li>
-                <button>по типу</button>
-              </li>
-              <li>
-                <button>по названию</button>
-              </li>
-            </ul>
-            <ul class="sort-list direction">
-              <li>
-                <button class="active">
-                  <img src="1.svg" alt="">
-                </button>
-              </li>
-              <li>
-                <button>
-                  <img class="arrow-up" src="1.svg" alt="">
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
+          </li>
 
-        <!-- <div class="container-filter">
-          <ul class="sort-list">
-            <li class="sort-list1">
-              <a class="sort-list-item" href="#">по цене </a>
-              <a class="sort-list-item" href="#">по типу</a>
-              <a class="sort-list-item" href="#">по названию</a>
-            </li>
-          </ul>
-        </div>
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/pink.png" width="358" height="578" alt="проект Pink">
+            <div class="project-info">
+              <a href="#" class="project-title">Pink</a>
+              <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="project-button">9900р</button>
+            </div>
+          </li>
 
-        <div class="sort">
-          <div class="filtration-title">сортировать:
-          </div>
-          <li class="sort-list2">
-              <a href="#">по убыванию</a>
-              <a href="#">по возрастанию</a>
-            </li>-->
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/borodinskiy.png" width="358" height="578"
+              alt="проект borodinskiy">
+            <div class="project-info">
+              <a href="#" class="project-title">borodinskiy</a>
+              <p class="project-description">Место для информации о барбершопе "Бородинский"</p>
+              <button class="project-button">9900р</button>
+            </div>
+          </li>
 
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/mishka.png" width="358" height="578" alt="проект mishka">
+            <div class="project-info">
+              <a href="#" class="project-title">mishka</a>
+              <p class="project-description">Место для информации о проекте Mishka</p>
+              <button class="project-button">9900р</button>
+            </div>
+          </li>
 
-        <div class="projects">
-          <ul class="project">
-            <li class="projects-item1">
-              <img class="element" src="img/project-bars/sedona-bar.svg" alt="sedona-element">
-              <img class="project-pic" src="img/projects/sedona.png" width="358" height="578" alt="отдых в седоне">
-              <div class="sedona-project">
-                <div class="sedona-wraper">
-                  <p class="sedona">sedona</p>
-                  <p class="sedona-info">Информационный сайт <br> для туристов</p>
-                  <button class="button-sedona">9900р</button>
-                </div>
-              </div>
-            </li>
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/a+.png" width="358" height="578" alt="проект A+">
+            <div class="project-info">
+              <a href="#" class="project-title">A+</a>
+              <p class="project-description">Место для информации о проекте A+</p>
+              <button class="project-button">9900р</button>
+            </div>
+          </li>
 
-            <li class="projects-item1">
-              <img class="element" src="img/project-bars/common-bar.svg" alt="sedona-element">
-              <img class="project-pic-pink" src="img/projects/pink.png" width="358" height="578" alt="pink">
-              <!--<a href="#">pink</a>-->
-            </li>
-
-            <li class="projects-item2">
-              <img class="element" src="img/project-bars/common-bar.svg" alt="sedona-element">
-              <img class="project-pic-borodinski" src="img/projects/borodinskiy.png" width="358" height="578"
-                alt="barbershop">
-              <!--<a href="#">barbershop borodinski</a>-->
-            </li>
-
-            <li class="projects-item3">
-              <img class="element" src="img/project-bars/common-bar.svg" alt="sedona-element">
-              <img class="project-pic-mishka" src="img/projects/mishka.png" width="358" height="578"
-                alt="вязаные изделия">
-              <!--<a href="#">mishka</a>-->
-            </li>
-
-            <li class="projects-item4">
-              <img class="element" src="img/project-bars/common-bar.svg" alt="sedona-element">
-              <img class="project-pic-A" src="img/projects/a+.png" width="358" height="578" alt="обучающий центр">
-              <!--<a href="#">A+</a>-->
-            </li>
-
-            <li class="projects-item5">
-              <img class="element" src="img/project-bars/common-bar.svg" alt="sedona-element">
-              <img class="project-pic-kvast" src="img/projects/kvast.png" width="358" height="578"
-                alt="производитель кваса">
-              <!--<a href="#">КВАСТ</a>-->
-            </li>
-          </ul>
-        </div>
-      </div>
-      </div>
-
-
-      <div class="buttons">
-        <ul class="button-list">
-          <li class="button-1st-page"><a href="#">1</a></li>
-          <li class="button-1"><a href="#">2</a></li>
-          <li class="button-1"><a href="#">3</a></li>
-          <li class="button-item"><a class="next" href="#">следующая</a></li>
+          <li class="projects-item">
+            <img class="project-pic" src="img/projects/kvast.png" width="358" height="578" alt="проект kvast">
+            <div class="project-info">
+              <a href="#" class="project-title">kvast</a>
+              <p class="project-description">Место для информации о проекте kvast</p>
+              <button class="project-button">9900р</button>
+            </div>
+          </li>
         </ul>
+
+        <div class="buttons">
+          <ul class="button-list">
+            <li class="active-button"><a href="#">1</a></li>
+            <li class="button-item"><a href="#">2</a></li>
+            <li class="button-item"><a href="#">3</a></li>
+            <li class="button-item"><a class="next" href="#">следующая</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="box">
     <section class="footer-contacts">
+      <h2 class="visually-hidden">Локация на карте</h2>
       <div class="container">
         <img class="location-marker" src="img/map/map-marker.png" width="231" height="190" alt="Метка на карте">
         <div class="location-address">
@@ -281,6 +224,7 @@
     </section>
 
     <section class="footer-social">
+      <h2 class="visually-hidden">Контакты через соц.сети</h2>
       <div class="container container-flex">
 
         <ul class="social-list">
@@ -300,15 +244,7 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
-    </section>
   </footer>
-
 </body>
 
 </html>
