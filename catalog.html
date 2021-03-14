@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Каталог работ</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="main-body">
   <header class="main-header">
     <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logos/nerds-logo.svg" width="160" height="66" alt="Логотип Нердс"></a>
+      <a class="main-header-logo" href="index.html"> <img src="img/logos/nerds-logo.svg" width="160" height="66"
+          alt="Логотип Нердс" /></a>
+
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -23,7 +23,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-        <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="">Корзина</a>
+        <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="" />Корзина</a>
       </div>
     </nav>
   </header>
@@ -44,68 +44,64 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="width: 60%; margin-left: 20%">
-                  </div>
+                  <div class="bar" style="width: 60%; margin-left: 20%;"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 70%;"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
-                </label>
+                <label class="min-price"> от <input type="text" name="min-price" value="0" /> </label>
+                <label class="max-price"> до <input type="text" name="max-price" value="15 000" /> </label>
               </div>
             </div>
           </fieldset>
+
+
+          <fieldset class="grid">
+            <legend class="grid-title">сетка:</legend>
+            <ul class="grid-list">
+              <li class="grid-item">
+                <input class="visually-hidden" type="radio" name="grid" value="Адаптивная" id="grid1" checked />
+                <label class="grid-label" for="grid1">Адаптивная</label>
+              </li>
+              <li class="grid-item">
+                <input class="visually-hidden" type="radio" name="grid" value="Фиксированная" id="grid2" />
+                <label class="grid-label" for="grid2">Фиксированная</label>
+              </li>
+              <li class="grid-item">
+                <input class="visually-hidden" type="radio" name="grid" value="Резиновая" id="grid3" />
+                <label class="grid-label" for="grid3">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="features">
+            <legend class="features-title">особенности:</legend>
+            <ul class="features-list">
+              <li class="features-item">
+                <input name="features-1" type="checkbox" id="slider-checkbox" checked />
+                <label class="feature-label" for="slider-checkbox">Слайдер</label>
+              </li>
+              <li class="features-item">
+                <input name="features-2" type="checkbox" id="block-checkbox" />
+                <label class="feature-label" for="block-checkbox">Блок преимуществ</label>
+              </li>
+              <li class="features-item">
+                <input name="features-3" type="checkbox" id="news-checkbox" checked />
+                <label class="feature-label" for="news-checkbox">Новости</label>
+              </li>
+              <li class="features-item">
+                <input name="features-4" type="checkbox" id="gallery-checkbox" />
+                <label class="feature-label" for="gallery-checkbox">Галерея</label>
+              </li>
+              <li class="features-item">
+                <input name="features-5" type="checkbox" id="bucket-checkbox" />
+                <label class="feature-label" for="bucket-checkbox">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="submit"><span>показать</span></button>
         </form>
-
-        <fieldset class="grid">
-          <legend class="grid-title">сетка:</legend>
-          <ul class="grid-list">
-            <li class="grid-item">
-              <input class="visually-hidden" type="radio" name="grid" value="Адаптивная" id="grid1" checked>
-              <label class="grid-label" for="grid1">Адаптивная</label>
-            </li>
-            <li class="grid-item">
-              <input class="visually-hidden" type="radio" name="grid" value="Фиксированная" id="grid2">
-              <label class="grid-label" for="grid2">Фиксированная</label>
-            </li>
-            <li class="grid-item">
-              <input class="visually-hidden" type="radio" name="grid" value="Резиновая" id="grid3">
-              <label class="grid-label" for="grid3">Резиновая</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="features">
-          <legend class="features-title">особенности:</legend>
-          <ul class="features-list">
-            <li class="features-item">
-              <input name="features-one" type="checkbox" id="slider-checkbox" checked>
-              <label class="feature-label" for="slider-checkbox">Слайдер</label>
-            </li>
-            <li class="features-item">
-              <input name="features-one" type="checkbox" id="block-checkbox">
-              <label class="feature-label" for="block-checkbox">Блок преимуществ</label>
-            </li>
-            <li class="features-item">
-              <input name="features-one" type="checkbox" id="news-checkbox" checked>
-              <label class="feature-label" for="news-checkbox">Новости</label>
-            </li>
-            <li class="features-item">
-              <input name="features-one" type="checkbox" id="gallery-checkbox">
-              <label class="feature-label" for="gallery-checkbox">Галерея</label>
-            </li>
-            <li class="features-item">
-              <input name="features-one" type="checkbox" id="bucket-checkbox">
-              <label class="feature-label" for="bucket-checkbox">Корзина</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="submit"><span>показать</span></button>
       </div>
 
       <div class="filtration-box">
@@ -127,19 +123,19 @@
           <ul class="sort-list direction">
             <li>
               <button class="active">
-                <img src="img/icons/down-arrow.svg" alt="по убыванию">
+                <img src="img/icons/down-arrow.svg" width="11" height="10" alt="по убыванию" />
               </button>
             </li>
             <li>
               <button>
-                <img class="arrow-up" src="img/icons/down-arrow.svg" alt="по возрастанию">
+                <img class="arrow-up" src="img/icons/down-arrow.svg" width="11" height="10" alt="по возрастанию" />
               </button>
             </li>
           </ul>
         </div>
         <ul class="projects">
           <li class="projects-item">
-            <img class="project-pic" src="img/projects/sedona.png" width="358" height="578" alt="проект Sedona">
+            <img class="project-pic" src="img/projects/sedona.png" width="358" height="578" alt="проект Sedona" />
             <div class="project-info">
               <a href="#" class="project-title">sedona</a>
               <p class="project-description">Информационный сайт для туристов</p>
@@ -148,7 +144,7 @@
           </li>
 
           <li class="projects-item">
-            <img class="project-pic" src="img/projects/pink.png" width="358" height="578" alt="проект Pink">
+            <img class="project-pic" src="img/projects/pink.png" width="358" height="578" alt="проект Pink" />
             <div class="project-info">
               <a href="#" class="project-title">Pink</a>
               <p class="project-description">Продуктовый лендинг приложения для iOS и Android</p>
@@ -158,7 +154,7 @@
 
           <li class="projects-item">
             <img class="project-pic" src="img/projects/borodinskiy.png" width="358" height="578"
-              alt="проект borodinskiy">
+              alt="проект borodinskiy" />
             <div class="project-info">
               <a href="#" class="project-title">borodinskiy</a>
               <p class="project-description">Место для информации о барбершопе "Бородинский"</p>
@@ -167,7 +163,7 @@
           </li>
 
           <li class="projects-item">
-            <img class="project-pic" src="img/projects/mishka.png" width="358" height="578" alt="проект mishka">
+            <img class="project-pic" src="img/projects/mishka.png" width="358" height="578" alt="проект mishka" />
             <div class="project-info">
               <a href="#" class="project-title">mishka</a>
               <p class="project-description">Место для информации о проекте Mishka</p>
@@ -176,7 +172,7 @@
           </li>
 
           <li class="projects-item">
-            <img class="project-pic" src="img/projects/a+.png" width="358" height="578" alt="проект A+">
+            <img class="project-pic" src="img/projects/a+.png" width="358" height="578" alt="проект A+" />
             <div class="project-info">
               <a href="#" class="project-title">A+</a>
               <p class="project-description">Место для информации о проекте A+</p>
@@ -185,7 +181,7 @@
           </li>
 
           <li class="projects-item">
-            <img class="project-pic" src="img/projects/kvast.png" width="358" height="578" alt="проект kvast">
+            <img class="project-pic" src="img/projects/kvast.png" width="358" height="578" alt="проект kvast" />
             <div class="project-info">
               <a href="#" class="project-title">kvast</a>
               <p class="project-description">Место для информации о проекте kvast</p>
@@ -200,41 +196,45 @@
           <li class="filtration-nav-item"><a href="#">3</a></li>
           <li class="filtration-nav-item is-next"><a href="#">следующая</a></li>
         </ul>
-
       </div>
     </section>
   </main>
 
   <footer>
     <section class="footer-contacts">
-      <h2 class="visually-hidden">Локация на карте</h2>
+      <h2 class="visually-hidden">Contacts</h2>
       <div class="container">
-        <img class="location-marker" src="img/map/map-marker.png" width="231" height="190" alt="Метка на карте">
+        <img class="location-marker" src="img/map/map-marker.png" width="231" height="190" alt="Метка на карте" />
         <div class="location-address">
           <p class="address-title">NЁRDS DESIGN STUDIO</p>
-          <p class="address-text">191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
+          <p class="address-text">
+            191186, Санкт-Петербург, <br />
+            ул. Б.Конюшенная, д.19/8
+          </p>
           <a class="address-phone" href="tel:+78122757575">
             тел.+7 (812) 275-75-75
           </a>
           <button class="address-button"><span>Напишите нам</span></button>
         </div>
       </div>
-      <img class="location-map" src="img/map/map.png" width="1440" height="416" alt="Локация компании на карте">
+      <img class="location-map" src="img/map/map.jpg" width="1440" height="416" alt="Локация компании на карте" />
     </section>
 
     <section class="footer-social">
-      <h2 class="visually-hidden">Контакты через соц.сети</h2>
+      <h2 class="visually-hidden">Socials</h2>
       <div class="container container-flex">
-
         <ul class="social-list">
           <li>
-            <a class="social-link" href="#" target="_blank"><img src="img/icons/vk-icon.svg" alt="VK"></a>
+            <a class="social-link" href="#" target="_blank"><img src="img/icons/vk-icon.svg" width="26" height="15"
+                alt="VK" /></a>
           </li>
           <li>
-            <a class="social-link" href="#" target="_blank"><img src="img/icons/facebook-icon.svg" alt="Facebook"></a>
+            <a class="social-link" href="#" target="_blank"><img src="img/icons/facebook-icon.svg" width="12"
+                height="22" alt="Facebook" /></a>
           </li>
           <li>
-            <a class="social-link" href="#" target="_blank"><img src="img/icons/ig-icon.svg" alt="ig"></a>
+            <a class="social-link" href="#" target="_blank"><img src="img/icons/ig-icon.svg" width="21" height="21"
+                alt="ig" /></a>
           </li>
         </ul>
         <div class="slogan">
@@ -244,6 +244,30 @@
       </div>
     </section>
   </footer>
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div class="modal-title-wrapper">
+        <h2 class="modal-title">Напишите нам</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
+      <form class="modal-box" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
+        <div class="username-login">
+          <div>
+            <p class="modal-username">Ваше имя:</p>
+            <input type="text" class="name-field" name="username" placeholder="Имя Фамилия" />
+          </div>
+          <div>
+            <p class="modal-login">Ваш email:</p>
+            <input type="text" class="login-field" name="login" placeholder="email@example.com" />
+          </div>
+        </div>
+        <p class="modal-letter">Текст письма</p>
+        <textarea class="letter-space" name="letter" placeholder="В свободной форме"></textarea>
+        <button class="button-send" type="submit"><span>Отправить</span></button>
+      </form>
+
+    </div>
+  </div>
 </body>
 
 </html>
