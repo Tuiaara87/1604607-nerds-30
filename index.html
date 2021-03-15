@@ -36,8 +36,7 @@
           <div class="slide">
             <div class="slide-text">
               <div class="slide-title">Долго, дорого, скрупулезно.</div>
-              <div class="slide-subtitle">Математически выверенный дизайн <br>
-                для вашего сайта или мобильного
+              <div class="slide-subtitle">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного
                 приложения.</div>
               <a class="slide-btn" href="#"><span>Узнать больше</span></a>
             </div>
@@ -65,7 +64,7 @@
           <div class="slide">
             <div class="slide-text">
               <div class="slide-title">Долго, дорого, скрупулезно.</div>
-              <div class="slide-subtitle">Математически выверенный дизайн для&nbsp; вашего сайта или мобильного
+              <div class="slide-subtitle">Математически выверенный дизайн для&nbsp;вашего&nbsp;sdadсайта или мобильного
                 приложения.</div>
               <a class="slide-btn" href="#"><span>Узнать больше</span></a>
             </div>
@@ -157,24 +156,24 @@
         <ul class="customers-list">
           <li class="customers-item">
             <a href="https://htmlacademy.ru" target="_blank">
-              <img class="customer1" src="img/customers/htmlacademy.svg" width="199" height="68"
+              <img class="customer" src="img/customers/htmlacademy.svg" width="199" height="68"
                 alt="Клиент htmlacademy" />
             </a>
           </li>
           <li class="customers-item">
             <a href="#">
-              <img class="customer2" src="img/customers/borodinski.svg" width="209" height="90"
+              <img class="customer" src="img/customers/borodinski.svg" width="209" height="90"
                 alt="Клиент бородинский" />
             </a>
           </li>
           <li class="customers-item">
             <a href="#">
-              <img class="customer3" src="img/customers/pink.svg" width="185" height="52" alt="Клиент пинк" />
+              <img class="customer" src="img/customers/pink.svg" width="185" height="52" alt="Клиент пинк" />
             </a>
           </li>
           <li class="customers-item">
             <a href="#">
-              <img class="customer4" src="img/customers/mishka.svg" width="173" height="84" alt="Клиент мишка" />
+              <img class="customer" src="img/customers/mishka.svg" width="173" height="84" alt="Клиент мишка" />
             </a>
           </li>
         </ul>
@@ -229,26 +228,25 @@
 
   <div class="modal-wrapper">
     <div class="modal">
-      <h2 class="modal-title">Напишите нам</h2>
-      <div class="modal-box">
+      <div class="modal-title-wrapper">
+        <h2 class="modal-title">Напишите нам</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
+      <form class="modal-box" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <div class="username-login">
           <div>
             <p class="modal-username">Ваше имя:</p>
-            <form action="#" method="POST" enctype="multipart/form-data"></form>
             <input type="text" class="name-field" name="username" placeholder="Имя Фамилия" />
           </div>
           <div>
             <p class="modal-login">Ваш email:</p>
-            <form action="#" method="POST" enctype="multipart/form-data"></form>
             <input type="text" class="login-field" name="login" placeholder="email@example.com" />
           </div>
         </div>
         <p class="modal-letter">Текст письма</p>
-        <form action="#" method="POST" enctype="multipart/form-data"></form>
         <textarea class="letter-space" name="letter" placeholder="В свободной форме"></textarea>
-        <button class="button-send" type="button">Отправить</button>
-      </div>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        <button class="button-send" type="submit"><span>Отправить</span></button>
+      </form>
     </div>
   </div>
 </body>
