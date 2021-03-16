@@ -5,9 +5,10 @@
   <meta charset="utf-8" />
   <title>Студия Нердс</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="main-body">
@@ -235,20 +236,21 @@
       <form class="modal-box" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <div class="username-login">
           <div>
-            <p class="modal-username">Ваше имя:</p>
-            <input type="text" class="name-field" name="username" placeholder="Имя Фамилия" />
+            <p class="modal-label">Ваше имя:</p>
+            <input type="text" class="name-field modal-input" name="username" placeholder="Имя Фамилия" />
           </div>
           <div>
-            <p class="modal-login">Ваш email:</p>
-            <input type="text" class="login-field" name="login" placeholder="email@example.com" />
+            <p class="modal-label">Ваш email:</p>
+            <input type="email" class="login-field modal-input" name="login" placeholder="email@example.com" />
           </div>
         </div>
-        <p class="modal-letter">Текст письма</p>
-        <textarea class="letter-space" name="letter" placeholder="В свободной форме"></textarea>
+        <p class="modal-label">Текст письма</p>
+        <textarea class="letter-space modal-input" name="letter" placeholder="В свободной форме"></textarea>
         <button class="button-send" type="submit"><span>Отправить</span></button>
       </form>
     </div>
   </div>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>

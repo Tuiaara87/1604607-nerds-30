@@ -5,9 +5,10 @@
   <meta charset="utf-8" />
   <title>Каталог работ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="main-body">
@@ -68,7 +69,7 @@
                 <label class="grid-label" for="grid2">Фиксированная</label>
               </li>
               <li class="grid-item">
-                <input class="visually-hidden" type="radio" name="grid" value="Резиновая" id="grid3" />
+                <input class="visually-hidden" type="radio" name="grid" value="Резиновая" id="grid3" disabled />
                 <label class="grid-label" for="grid3">Резиновая</label>
               </li>
             </ul>
@@ -94,7 +95,7 @@
                 <label class="feature-label" for="gallery-checkbox">Галерея</label>
               </li>
               <li class="features-item">
-                <input name="features-5" type="checkbox" id="bucket-checkbox" />
+                <input name="features-5" type="checkbox" id="bucket-checkbox" disabled />
                 <label class="feature-label" for="bucket-checkbox">Корзина</label>
               </li>
             </ul>
@@ -121,14 +122,10 @@
           </ul>
           <ul class="sort-list direction">
             <li>
-              <button class="active">
-                <img src="img/icons/down-arrow.svg" width="11" height="10" alt="по убыванию" />
-              </button>
+              <button class="active"></button>
             </li>
             <li>
-              <button>
-                <img class="arrow-up" src="img/icons/down-arrow.svg" width="11" height="10" alt="по возрастанию" />
-              </button>
+              <button class="arrow-up"></button>
             </li>
           </ul>
         </div>
@@ -243,6 +240,7 @@
       </div>
     </section>
   </footer>
+
   <div class="modal-wrapper">
     <div class="modal">
       <div class="modal-title-wrapper">
@@ -252,20 +250,22 @@
       <form class="modal-box" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <div class="username-login">
           <div>
-            <p class="modal-username">Ваше имя:</p>
-            <input type="text" class="name-field" name="username" placeholder="Имя Фамилия" />
+            <p class="modal-label">Ваше имя:</p>
+            <input type="text" class="name-field modal-input" name="username" placeholder="Имя Фамилия" />
           </div>
           <div>
-            <p class="modal-login">Ваш email:</p>
-            <input type="text" class="login-field" name="login" placeholder="email@example.com" />
+            <p class="modal-label">Ваш email:</p>
+            <input type="email" class="login-field modal-input" name="login" placeholder="email@example.com" />
           </div>
         </div>
-        <p class="modal-letter">Текст письма</p>
-        <textarea class="letter-space" name="letter" placeholder="В свободной форме"></textarea>
+        <p class="modal-label">Текст письма</p>
+        <textarea class="letter-space modal-input" name="letter" placeholder="В свободной форме"></textarea>
         <button class="button-send" type="submit"><span>Отправить</span></button>
       </form>
     </div>
   </div>
+
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
