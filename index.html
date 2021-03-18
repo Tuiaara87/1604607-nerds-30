@@ -14,8 +14,9 @@
 <body class="main-body">
   <header class="main-header">
     <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html"> <img src="img/logos/nerds-logo.svg" width="160" height="66"
-          alt="Логотип Нердс" /></a>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logos/nerds-logo.svg" width="160" height="66" alt="Логотип Нердс" />
+      </a>
 
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
@@ -24,7 +25,10 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-        <a class="bucket-link" href="#"><img src="img/icons/bucket.svg" width="15" height="15" alt="" />Корзина</a>
+        <a class="bucket-link" href="#">
+          <img src="img/icons/bucket.svg" width="15" height="15" alt="Корзина покупок" />
+          Корзина
+        </a>
       </div>
     </nav>
   </header>
@@ -88,14 +92,14 @@
       <div class="container">
         <ul class="services-list">
           <li class="services-item">
-            <img class="service-pic" src="img/services/websites.png" width="300" height="146" alt="Ноутбук" />
+            <img class="service-pic" src="img/services/websites.png" width="300" height="146" alt="Вебсайты" />
             <h3 class="service-name">Веб-сайты</h3>
             <p class="service-title">Мир никогда не будет прежним после того как увидит наш сайт!</p>
             <button class="services-button1"><span>Заказать</span></button>
           </li>
 
           <li class="services-item">
-            <img class="service-pic" src="img/services/applications.png" width="300" height="146" alt="Смартфоны" />
+            <img class="service-pic" src="img/services/applications.png" width="300" height="146" alt="Приложения" />
             <h3 class="service-name">Приложения</h3>
             <p class="service-title">Покорите топ-10 приложений в&nbsp;AppStore и Google Play</p>
             <button class="services-button2"><span>Заказать</span></button>
@@ -108,6 +112,7 @@
             <p class="service-title">Вы даже не подозреваете, насколько вы изумительны!</p>
             <button class="services-button3"><span>Заказать</span></button>
           </li>
+
         </ul>
       </div>
     </section>
@@ -146,6 +151,7 @@
               <div class="percentage">50<sup>%</sup></div>
               Минимальная предоплата
             </li>
+
           </ul>
         </div>
       </div>
@@ -155,13 +161,13 @@
       <h2 class="visually-hidden">наши клиенты</h2>
       <div class="container">
         <ul class="customers-list">
-          <li class="customers-item">
-            <a href="https://htmlacademy.ru" target="_blank">
+          <li class="customers-item customers-html">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
               <img class="customer" src="img/customers/htmlacademy.svg" width="199" height="68"
                 alt="Клиент htmlacademy" />
             </a>
           </li>
-          <li class="customers-item">
+          <li class="customers-item customers-borodinski">
             <a href="#">
               <img class="customer" src="img/customers/borodinski.svg" width="209" height="90"
                 alt="Клиент бородинский" />
@@ -182,7 +188,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Contacts</h2>
       <div class="container">
@@ -191,12 +197,12 @@
           <p class="address-title">NЁRDS DESIGN STUDIO</p>
           <p class="address-text">
             191186, Санкт-Петербург, <br />
-            ул. Б.Конюшенная, д.19/8
+            ул. Б. Конюшенная, д. 19/8
           </p>
           <a class="address-phone" href="tel:+78122757575">
-            тел.+7 (812) 275-75-75
+            тел. +7 (812) 275-75-75
           </a>
-          <button class="address-button"><span>Напишите нам</span></button>
+          <a href="modal.html" class="address-button" target="_blank"><span>Напишите нам</span></a>
         </div>
       </div>
       <img class="location-map" src="img/map/map.jpg" width="1440" height="416" alt="Локация компании на карте" />
@@ -216,7 +222,7 @@
           </li>
           <li>
             <a class="social-link" href="#" target="_blank"><img src="img/icons/ig-icon.svg" width="21" height="21"
-                alt="ig" /></a>
+                alt="Instagram" /></a>
           </li>
         </ul>
         <div class="slogan">
@@ -236,20 +242,24 @@
       <form class="modal-box" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <div class="username-login">
           <div>
-            <p class="modal-label">Ваше имя:</p>
-            <input type="text" class="name-field modal-input" name="username" placeholder="Имя Фамилия" />
+            <label for="name-field" class="modal-label">Ваше имя:</label>
+            <input type="text" class="name-field modal-input" name="username" placeholder="Имя Фамилия"
+              id="name-field" />
           </div>
           <div>
-            <p class="modal-label">Ваш email:</p>
-            <input type="email" class="login-field modal-input" name="login" placeholder="email@example.com" />
+            <label for="login-field" class="modal-label">Ваш email:</label>
+            <input type="email" class="login-field modal-input" name="login" placeholder="email@example.com"
+              id="login-field" />
           </div>
         </div>
-        <p class="modal-label">Текст письма</p>
-        <textarea class="letter-space modal-input" name="letter" placeholder="В свободной форме"></textarea>
+        <label for="letter-space" class="modal-label">Текст письма</label>
+        <textarea class="letter-space modal-input" name="letter" placeholder="В свободной форме"
+          id="letter-space"></textarea>
         <button class="button-send" type="submit"><span>Отправить</span></button>
       </form>
     </div>
   </div>
+
   <script src="js/script.min.js"></script>
 </body>
 
